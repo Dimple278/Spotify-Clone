@@ -14,21 +14,22 @@ body{
 }
 
 .sidebar{
-    background-color: red;
-    width: 340px;
+    width: 370px;
     border-radius: 1rem; /* 1rem=16px*/
     /* background-color: #121212; */
     /* background-color: #120f0f; */
-    background-color: green
-    ;
+    background-color: #000;
+    margin-right: 0.5rem;
+
+    
 }
 
 .main-content{
     background-color: blue;
     flex: 1;
     border-radius: 1rem; 
-    /* background-color: #121212; */
-    background-color: #120f0f;
+    background-color: #121212;
+    
 }
 
 .music-player{
@@ -45,13 +46,14 @@ a{
 }
 
 .nav{
-    background-color: #120f0f;
+    background-color: #121212;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100px;
     padding: 0.5rem 0.75rem;
+    font-weight: 600;
 }
 
 .nav-option{
@@ -74,11 +76,12 @@ a{
 }
 
 .library{
-    background-color: #120f0f;
+    background-color: #121212;
     border-radius: 1rem;
     height: 100%;
     margin-top: 0.5rem;
     padding: 0.5rem 0.75rem;
+    /* overflow: auto; */
 }
 
 .options{
@@ -105,4 +108,60 @@ a{
 
 .icons i:hover{
     opacity: 1;
+    
+}
+
+.lib-box{
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.box{
+    height: fit-content;
+    padding: 1rem 1.25rem;
+    margin:0.5rem 0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #242424;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+   
+    
+}
+.box p {
+    line-height: 1.5rem; /* Increase or decrease this value to adjust the line spacing */
+  }
+  
+.box-p1{
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+.box-p2{
+    font-size: 0.87rem;
+    line-height: 1rem;
+    font-weight: 600;
+} 
+
+.badge{
+    border-radius: 100px;
+    border: none;
+    width:fit-content;
+    padding: 0.25rem 1rem;
+    line-height: 2rem;
+    background-color: #fff;
+    font-weight:700;
+    box-shadow: 0px 6px 8px #080808;
+    transition: box-shadow 0.3s ease-in-out;
+   
+}
+
+.badge:hover{
+    /* width: 1rem; */
+    box-shadow: 0px 12px 16px #080808;
+    /* font-weight: 800; */
 }
